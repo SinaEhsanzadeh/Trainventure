@@ -262,7 +262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 465824949}
   m_Layer: 0
-  m_Name: RightCollision
+  m_Name: Right Collision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -590,7 +590,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1044158265}
   m_Layer: 0
-  m_Name: BottomCollision
+  m_Name: Bottom Collision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -621,7 +621,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1254285374}
   m_Layer: 0
-  m_Name: TopCollision
+  m_Name: Top Collision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -937,6 +937,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 208a2a872e1720e4483ca94d0ac7fdee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0.0062434673, g: 1, b: 0, a: 1}
+  originalColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &2030858618
 GameObject:
   m_ObjectHideFlags: 0
@@ -1177,7 +1179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2116099648}
   m_Layer: 0
-  m_Name: LeftCollision
+  m_Name: Left Collision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
