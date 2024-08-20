@@ -1,20 +1,19 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class HighlightScript : MonoBehaviour
 {
     private SpriteRenderer sprite;
-    public Color color;
-    public Color originalColor;
+    private Color color;
+    private Color originalColor;
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
-        originalColor = Color.red;
-        color = Color.cyan;
+        originalColor = sprite.color;
+        color = Color.yellow;
     }
     void OnTriggerStay2D(Collider2D target)
     {
