@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-//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
 public class PlayerScript : MonoBehaviour
 {
     public float speed = 5f;
@@ -33,13 +32,13 @@ public class PlayerScript : MonoBehaviour
 
     void Update()
     {
-        CheckIfGrounded();
-        PlayerMove();
-        PlayerJump();
+        
     }
     void FixedUpdate()
     {
-        
+        CheckIfGrounded();
+        PlayerMove();
+        PlayerJump(); 
     }
 
     
@@ -79,13 +78,13 @@ public class PlayerScript : MonoBehaviour
     void CheckIfGrounded()
     {
         
-        if (Physics2D.OverlapArea(new Vector2(groundCheckPosition.position.x - 0.3f, groundCheckPosition.position.y), new Vector2(groundCheckPosition.position.x + 0.3f, groundCheckPosition.position.y) , groundLayer))
+        if (Physics2D.OverlapArea(new Vector2(groundCheckPosition.position.x - 0.3f, groundCheckPosition.position.y - 0.01f), new Vector2(groundCheckPosition.position.x + 0.3f, groundCheckPosition.position.y + 0.01f) , groundLayer))
         {
             if (jumped)
             {
                 jumped = false;
             }
-
+            
             isGrounded = true;
 
         }
